@@ -1,0 +1,1 @@
+<h6>Copyright <?php echo date('Y'); ?> <a href="#"> -MAHABODHI DOCUMENTRY AND FILM PRODUCTION FOUNDATION-</a></h6>
