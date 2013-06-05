@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    background-color: gray;
+}
+#login-wrapper
+{
+    border-style: dashed;
+    border-color: green;
+    width: 60%;
+    background-color: blue;
+}
+#content-wrapper, #menu-wrapper{
+    
+    display: inline;
+    float: left;
+    margin: 0px;
+    border: 0px;
+}
+#menu-wrapper{
+    width: 25%;
+    background-color: brown;
+}
+#content-wrapper{
+    width: 30%;
+    background-color: yellow;
+}
