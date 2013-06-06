@@ -36,7 +36,7 @@
                         Search Video:
                     </div>
                     <div class="content-area" style="margin-top: 8px;">
-                            <form name="search_form" method="post" action="#" id="search-form">
+                            <form name="search_form" method="post" action="http://localhost/mahabodhi/admin/search/" id="search-form">
                                 <input type='text' name="search_text" id="search-text" required="true" placeholder="begin from here ... " /><br/>
                                 <input type="submit" name="search_submit" id="search-submit" value="Find This"/>
                             </form>
