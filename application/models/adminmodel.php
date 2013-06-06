@@ -72,4 +72,8 @@
             $this->db->where('id', $id);
             $this->db->update('featured_video', $data);
         }
+        
+        public function deleteVideo($y_id){
+            $this->db->delete('featured_video', array('y_id' => $y_id));
+        }
     }
