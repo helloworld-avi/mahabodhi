@@ -44,16 +44,16 @@
                         $this->editVideo();
                         break;
                     
+                    case 'delete':
+                        $this->deleteVideo();
+                        break;
+                    
                     case 'search':
                         $this->searchVideo($this->uri->rsegment(4));
                         break;
                     
                     case 'watch':
                         $this->watchVideo();
-                        break;
-                    
-                    case 'delete':
-                        $this->deleteVideo();
                         break;
                     
                     default:
@@ -104,7 +104,6 @@
         
         private function searchVideo($id){
             $s = $this->input-post( $this->input->post("search_text", TRUE) );
-            $this->load->model();
             
         }
         
@@ -133,7 +132,11 @@
         }
         
         private function deleteVideo(){
-            echo "video is deleted";
+            $y_id = $this->uri->rsegment(4);
+            
+            $this->load->model('adminmodel');
+            $this->adminmodel->deleteVideo($y_id);
+            echo "trying deleting";
         }
         
         private function message($msg){
