@@ -23,32 +23,35 @@
                         <h3>Edit Video</h3>
 		    </div>
 		    <div class="content-area">
+			<form name="item_new_form" action="http://localhost/mahabodhi/admin/video/edit-save" method="post">
+			<input type="hidden" name="item_id" required="true" value="<?php echo $video[0]['id']; ?>"/>
 			<table style="border: 1px solid blue; width: 100%;">
 			    <tr>
 				<td colspan="2" align="center"><div id="player"></div></td>
 			    </tr>
 			    <tr>
 				<td>Title:</td>
-				<td><input type="text" name="edit_video_title" required="true" value="<?php echo $video[0]['title']; ?>"/></td>
+				<td><input type="text" name="item_title" required="true" value="<?php echo $video[0]['title']; ?>"/></td>
 			    </tr>
 			    <tr>
 				<td>Youtube ID:</td>
-				<td><input type="text" name="edit_video_id" required="true" value="<?php echo $video[0]['y_id']; ?>"/></td>
+				<td><input type="text" name="item_y_id" required="true" value="<?php echo $video[0]['y_id']; ?>"/></td>
 			    </tr>
 			    <tr>
 				<td>Category:</td>
-				<td><input type="text" name="edit_video_cat" required="true" value="<?php echo $video[0]['category']; ?>"/></td>
+				<td><input type="text" name="item_category" required="true" value="<?php echo $video[0]['category']; ?>"/></td>
 			    </tr>
 			    <tr>
 				<td colspan="2">Description</td>
 			    </tr>
 			    <tr>
-				<td colspan="2"><textarea name="edit_vide_dex" required="true"><?php echo $video[0]['description']; ?></textarea></td>
+				<td colspan="2"><textarea name="item_dex" required="true"><?php echo $video[0]['description']; ?></textarea></td>
 			    </tr>
 			    <tr>
 				<td colspan="2"><input type="submit" name="edit_video_smt"/></td>
 			    </tr>
 			</table>
+			</form>
                     </div>
                 </div>
             </div>
