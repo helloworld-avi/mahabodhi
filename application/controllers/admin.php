@@ -59,7 +59,9 @@
         }
         
         private function searchVideo($id){
-            echo "search video";
+            $s = $this->input-post( $this->input->post("search_text", TRUE) );
+            $this->load->model();
+            
         }
         
         private function searchUser($id){
@@ -95,13 +97,13 @@
         }
         
         private function saveVideo(){
-            $arg = array('y_id' => $this->input->post('title_text', TRUE),
-                         'title' => $this->input->post('youtube_id_text', TRUE),
-                         'genre' => $this->input->post('genre_text', TRUE),
-                         'description' => $this->input->post('desc_textarea', TRUE)
-                        );
+            $video = array('title' => $this->input->post('item_title', TRUE),
+                           'y_id' => $this->input->post('item_id', TRUE),
+                           'category' => $this->input->post('item_category', TRUE),
+                           'description' => $this->input->post('item_dex', TRUE)
+                           );
             $this->load->model('adminmodel');
-            if(!$this->adminmodel->setVideo($arg)){
+            if(!$this->adminmodel->setVideo($video)){
                 $msg = "Oops something went wrong, Please make sure that you tube video id is not already present";
                 $this->message($msg);
             }
