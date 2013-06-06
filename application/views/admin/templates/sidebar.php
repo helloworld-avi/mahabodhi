@@ -23,8 +23,8 @@
         General Videos
     </div>
     <ul class="nav">
-        <li class="nav-list">Show All</li>
-        <li class="nav-list">Add new</li>
+        <li class="nav-list"><a href="<?php echo base_url().'admin/gvideo/show-all'; ?>">Show All</a></li>
+        <li class="nav-list"><a href="<?php echo base_url().'admin/gvideo/new'; ?>">Add new</a></li>
     </ul>
 </div>
 <div class="nav-wrap">
