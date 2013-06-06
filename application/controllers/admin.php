@@ -23,17 +23,6 @@
             }
             else{
                 switch($para){
-                    case 'search':
-                        $this->searchVideo($this->uri->rsegment(4));
-                        break;
-                    
-                    case 'watch':
-                        $this->watchVideo();
-                        break;
-                            
-                    case 'view-list':
-                            $this->viewVideoList($this->uri->rsegment(4));
-                            break;
                     
                     case 'new':
                         $this->newVideo();
@@ -42,9 +31,25 @@
                     case 'save':
                         $this->saveVideo();
                         break;
+                            
+                    case 'view-list':
+                            $this->viewVideoList($this->uri->rsegment(4));
+                            break;
                     
                     case 'edit':
                         $this->getVideoInfo($this->uri->rsegment(4));
+                        break;
+                    
+                    case 'edit-save':
+                        $this->editVideo();
+                        break;
+                    
+                    case 'search':
+                        $this->searchVideo($this->uri->rsegment(4));
+                        break;
+                    
+                    case 'watch':
+                        $this->watchVideo();
                         break;
                     
                     case 'delete':
@@ -56,40 +61,6 @@
                         break;
                 }
             }
-        }
-        
-        private function searchVideo($id){
-            $s = $this->input-post( $this->input->post("search_text", TRUE) );
-            $this->load->model();
-            
-        }
-        
-        private function searchUser($id){
-            
-        }
-        
-        private function watchVideo($id){
-        
-        }
-        
-        private function viewVideoList($cat){
-            if(!$cat){
-                $data['msg'] = "No category selected, Please select video category";
-                $this->load->view('admin/message', $data);
-            }
-            else{
-                $this->load->model('adminmodel');
-                $data['videos'] = $this->adminmodel->getFeaturedVideoByCategory($cat);
-                $this->load->view('admin/video/category-view-list', $data);
-                /*
-                $data['msg'] = "video list of ".$id." is displaying";
-                $this->load->view('admin/video/category-view-list', $data);
-                */
-            }
-        }
-        
-        private function viewUser($id){
-            
         }
         
         private function newVideo(){
@@ -113,10 +84,52 @@
             }
         }
         
+        private function viewVideoList($cat){
+            if(!$cat){
+                $data['msg'] = "No category selected, Please select video category";
+                $this->load->view('admin/message', $data);
+            }
+            else{
+                $this->load->model('adminmodel');
+                $data['videos'] = $this->adminmodel->getFeaturedVideoByCategory($cat);
+                $this->load->view('admin/video/category-view-list', $data);
+            }
+        }
+        
         private function getVideoInfo($id){
             $this->load->model('adminmodel');
             $data['video'] = $this->adminmodel->getVideoInfo($id);
             $this->load->view('admin/video/edit-video', $data);
+        }
+        
+        private function searchVideo($id){
+            $s = $this->input-post( $this->input->post("search_text", TRUE) );
+            $this->load->model();
+            
+        }
+        
+        private function editVideo(){
+            
+            $data = array('title' => $this->input->post('item_title', TRUE),
+                           'y_id' => $this->input->post('item_y_id', TRUE),
+                           'category' => $this->input->post('item_category', TRUE),
+                           'description' => $this->input->post('item_dex', TRUE)
+                           );
+            $id = $this->input->post('item_id', TRUE);
+            $this->load->model('adminmodel');
+            $this->adminmodel->updateVideo($id, $data);
+        }
+        
+        private function searchUser($id){
+            
+        }
+        
+        private function watchVideo($id){
+        
+        }
+        
+        private function viewUser($id){
+            
         }
         
         private function deleteVideo(){

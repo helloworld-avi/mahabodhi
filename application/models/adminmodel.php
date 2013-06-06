@@ -67,4 +67,9 @@
             return $result;
 			
 	}
+        
+        public function updateVideo($id, $data){
+            $this->db->where('id', $id);
+            $this->db->update('featured_video', $data);
+        }
     }
