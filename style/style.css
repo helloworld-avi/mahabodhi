@@ -54,6 +54,7 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	width: 964px;
 	height: 233px;
 	margin: 0 auto;
+	background: url(../images/templatemo_header1.png) left bottom no-repeat;
 }
 
 #site_title a {
