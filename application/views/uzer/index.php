@@ -14,6 +14,9 @@
 		    <?php
 			include_once "application/views/templates/header.php";
 		    ?>
+			<div class="cleaner">
+				
+			</div>
 		
 		</div>
 		<!-- end of header -->
@@ -24,14 +27,19 @@
 			<div id="content">
                             <!-- start of content box -->
                             <div class="content_box">
-                                <div id="donation">
+				<div id="uzer">
 				    <div id="donation1">
-					<div ><h1 align="center">Donate Us</h1></div>
-					<div id="don_1">Rs.<input type="text" class="donn" value="50"></div>
-					<div id="don_2"><a class="button float_r getstart" href="#"> Bank</a></div>
-					<div id="don_3"><a class="button float_r" href="#"> Esewa</a></div>					
+					<div ><h1 align="center">Login</h1></div>
+					<form action="#" name="login">
+					    <div id="uzer_1"><input type="text" class="uzer1" placeholder="username" required="TRUE" ></div>
+					    <div id="uzer_1"><input type="text" class="uzer1" placeholder="password" required="TRUE"></div>
+					    <div id="don_2"><a class="button float_r getstart" href="#">Sign In</a></div>
+					    <div id="don_3"><a class="button float_r" href="#"> Register</a></div>
+					</form>
 				    </div>
 				</div>
+				    
+				
                            </div>
                             <!-- end of cnontent box -->
                         </div>
@@ -40,6 +48,9 @@
 		<!-- end of main -->
 		
 		<!-- start of footer -->
+                <div class="cleaner">
+				
+			</div> 
 		<div id="footer">
 		    <?php
 			include "application/views/templates/footer.php";
