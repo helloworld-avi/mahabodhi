@@ -14,9 +14,6 @@
 		    <?php
 			include_once "application/views/templates/header.php";
 		    ?>
-			<div class="cleaner">
-				
-			</div>
 		
 		</div>
 		<!-- end of header -->
@@ -27,7 +24,7 @@
 			<div id="content">
                             <!-- start of content box -->
                             <div class="content_box">
-                                hello
+                                <img src="<?php echo base_url().'images/img.jpg'; ?>" alt="donate_us" width="964px" height="400px"/>
                            </div>
                             <!-- end of cnontent box -->
                         </div>
@@ -36,9 +33,6 @@
 		<!-- end of main -->
 		
 		<!-- start of footer -->
-                <div class="cleaner">
-				
-			</div> 
 		<div id="footer">
 		    <?php
 			include "application/views/templates/footer.php";

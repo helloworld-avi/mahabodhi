@@ -14,9 +14,6 @@
 		    <?php
 			include_once "application/views/templates/header.php";
 		    ?>
-			<div class="cleaner">
-				
-			</div>
 		
 		</div>
 		<!-- end of header -->

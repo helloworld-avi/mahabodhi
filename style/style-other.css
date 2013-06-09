@@ -47,7 +47,7 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 .image_wrapper_02 span { position: absolute; width: 280px; height: 120px; background: url(../images/image_frame.png) }
 
 
-#wrapper { width: 964px; margin: 0 auto }
+#wrapper { width: 964px; margin: 0 auto; background: url(../images/img.jpg) repeat;}
 
 #header {
 	width: 964px;
@@ -120,8 +120,7 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 .title { display: inline-block; padding: 20px 60px 20px 0; margin-bottom: 10px; font-size: 24px; color: #CC9933; }
 .content_box {
 	padding-bottom: 30px;
-	margin-bottom: 30px;
-	border-bottom: 1px solid #1e1e1e;	
+	margin-bottom: 30px;	
 }
 
 
@@ -175,7 +174,6 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	    height: 400px;
 	    overflow: scroll;
 	    overflow-x: hidden;
-	    background: #ccc;
 	}
 	.scrollContainer div.panel{
 	    width: 700px;
@@ -244,3 +242,5 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	background: #ccc;
 	margin-bottom: 20px;
 }
+
+/*================ style for donation page =================*/
