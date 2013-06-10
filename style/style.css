@@ -54,7 +54,7 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	width: 964px;
 	height: 233px;
 	margin: 0 auto;
-	background: url(../images/templatemo_header1.png) left bottom no-repeat;
+	background: url(../images/logo1.png) left bottom no-repeat;
 }
 
 #site_title a {
@@ -69,7 +69,7 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	text-decoration: none;
 	background: url(../images/mabodhi_logo.png) no-repeat;
 }
-#newsletter { float: right; width: 300px; height: 48px; padding: 10px 25px; margin: 0; background: url(../images/templatemo_newsletter_box.png); }
+#newsletter { float: right; width: 300px; height: 28px; padding: 10px 25px; margin: 0; background: url(../images/templatemo_newsletter_box.png); }
 #newsletter table {width: 260px; float: right; height: auto; padding: 0px; margin: 0px;}
 #newsletter form { width: 280px; height: 27px; padding: 0; margin-top: 8px; } 
 

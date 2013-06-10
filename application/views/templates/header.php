@@ -1,5 +1,5 @@
 <div id="site_title">
-            <a href="#" target="_parent" title="MAHABODHI DOCUMENTRY AND FILM PRODUCTION FOUNDATION"></a>
+            <a href="<?php echo base_url(); ?>" target="_parent" title="MAHABODHI DOCUMENTRY AND FILM PRODUCTION FOUNDATION"></a>
 </div> <!-- end of site_title -->
 <div id="newsletter">
             <form name='search_form' action="<?php echo base_url().'search'; ?>" method="post">
@@ -12,9 +12,9 @@
 <div id="menu">
     <ul>
         <li><a href="<?php echo base_url(); ?>">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="<?php echo base_url().'aboutus'; ?>">About Us</a></li>
+        <li><a href="<?php echo base_url().'donation' ; ?>">Support Us</a></li>
+        <li><a href="<?php echo base_url().'foundation' ; ?>">Video</a></li>
+        <li><a href="<?php echo base_url().'contactus' ; ?>">Contact Us</a></li>
     </ul>    	
 </div> <!-- end of _menu -->
