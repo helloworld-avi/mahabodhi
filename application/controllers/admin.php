@@ -281,4 +281,8 @@
             $data['msg'] = 'user unblocked';
             $this->load->view('admin/message',$data);
         }
+        
+        function search_user(){
+            $this->load->view('admin/user_list/search_user');
+        }
     }
