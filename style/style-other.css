@@ -17,7 +17,7 @@ p { margin: 0 0 10px 0; padding: 0; }
 img { border: none; }
 
 h1, h2, h3, h4, h5, h6 { color: #fff; font-weight: normal; }
-h1 { font-size: 28px; margin: 0 0 30px 0; padding: 5px 0 }
+h1 { font-size: 28px; color:#000; margin: 0 0 30px 0; padding: 5px 0 }
 h2 { font-size: 25px; margin: 0 0 20px 0; padding: 5px 0px 0px 20px; line-height: 30px; color: red; }
 h3 { font-size: 22px; margin: 0 0 15px; padding: 0; }
 a.h3{color: #CC9933;}
@@ -47,7 +47,7 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 .image_wrapper_02 span { position: absolute; width: 280px; height: 120px; background: url(../images/image_frame.png) }
 
 
-#wrapper { width: 964px; margin: 0 auto }
+#wrapper { width: 964px; margin: 0 auto; background: url(../images/img.jpg) repeat;}
 
 #header {
 	width: 964px;
@@ -120,8 +120,7 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 .title { display: inline-block; padding: 20px 60px 20px 0; margin-bottom: 10px; font-size: 24px; color: #CC9933; }
 .content_box {
 	padding-bottom: 30px;
-	margin-bottom: 30px;
-	border-bottom: 1px solid #1e1e1e;	
+	margin-bottom: 30px;	
 }
 
 
@@ -175,7 +174,6 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	    height: 400px;
 	    overflow: scroll;
 	    overflow-x: hidden;
-	    background: #ccc;
 	}
 	.scrollContainer div.panel{
 	    width: 700px;
@@ -243,4 +241,74 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	padding: 5px;
 	background: #ccc;
 	margin-bottom: 20px;
+}
+
+/*================ style for donation page =================*/
+#donation{
+	margin-left: 10px;
+	height: 400px;
+	width: 935px;
+	padding: 5px;
+	background: url(../images/donate.png) no-repeat;
+	margin-bottom: 20px;
+}
+#donation1{
+	margin: 45px auto auto 15px;
+	height: 240px;
+	width: 305px;
+	padding: 30px;
+	background: #ccc;
+	opacity: 0.3;
+}
+.donn{
+	float: left;
+	background: #CC9933;
+	border: 0px;
+	font-size: 20px;
+	width: 80px;
+	padding-left: 40px;
+}
+#don_1{
+	float: left;
+	padding-top: 6px;
+	padding-right: 10px;
+	font-size: 25px;
+	height: 30px;
+	width: 200px;
+	margin: 30px 0px 40px 40px;
+	background: #CC9933;
+}
+#don_2{
+	float: left;
+	padding: 5px;
+	margin: 5px;
+}
+#don_3{
+	float: right;
+	padding: 5px;
+	margin: 5px;
+}
+
+/*============= uzer login style  ==*/
+#uzer{
+	float: left;
+	margin-left: 280px;
+}
+#uzer_1{
+	float: left;
+	padding-top: 6px;
+	padding-right: 10px;
+	font-size: 25px;
+	height: 30px;
+	width: 200px;
+	margin: 10px auto 10px 40px;
+	background: #FFFFFF;
+}
+.uzer1{
+	float: left;
+	background: #FFFFFF;
+	color: #000;
+	border: 0px;
+	font-size: 20px;
+	width: 200px;
 }

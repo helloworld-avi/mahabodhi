@@ -14,9 +14,6 @@
 		    <?php
 			include_once "application/views/templates/header.php";
 		    ?>
-			<div class="cleaner">
-				
-			</div>
 		
 		</div>
 		<!-- end of header -->
@@ -27,7 +24,14 @@
 			<div id="content">
                             <!-- start of content box -->
                             <div class="content_box">
-                                hello
+                                <div id="donation">
+				    <div id="donation1">
+					<div ><h1 align="center">Donate Us</h1></div>
+					<div id="don_1">Rs.<input type="text" class="donn" value="50"></div>
+					<div id="don_2"><a class="button float_r getstart" href="#"> Bank</a></div>
+					<div id="don_3"><a class="button float_r" href="#"> Esewa</a></div>					
+				    </div>
+				</div>
                            </div>
                             <!-- end of cnontent box -->
                         </div>
@@ -36,9 +40,6 @@
 		<!-- end of main -->
 		
 		<!-- start of footer -->
-                <div class="cleaner">
-				
-			</div> 
 		<div id="footer">
 		    <?php
 			include "application/views/templates/footer.php";
