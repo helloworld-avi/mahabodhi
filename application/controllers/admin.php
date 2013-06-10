@@ -243,4 +243,32 @@
             $this->adminmodel->deleteGVideo($y_id);
             echo "trying deleting";
         }
+        
+        function user(){
+            $par = $this->uri->rsegment(3);
+            # echo $par;
+            $this->load->model('adminmodel');
+            $data['users'] = $this->adminmodel->get_user();
+            
+            $this->load->view('admin/user_list/user_list', $data);
+        }
+        function delete_user(){
+            $this->load->model('adminmodel');
+            $this->adminmodel->delete_user();
+            $data['msg'] = 'user deleted';
+            $this->load->view('admin/message',$data);
+           
+        }
+        function block_user(){
+            $this->load->model('adminmodel');
+            $this->adminmodel->block_user();
+            $data['msg'] = 'user blocked';
+            $this->load->view('admin/message',$data);
+        }
+        function unblock_user(){
+            $this->load->model('adminmodel');
+            $this->adminmodel->unblock_user();
+            $data['msg'] = 'user unblocked';
+            $this->load->view('admin/message',$data);
+        }
     }
