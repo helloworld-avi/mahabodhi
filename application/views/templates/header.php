@@ -11,7 +11,7 @@
 </div>      
 <div id="menu">
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="<?php echo base_url(); ?>">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Support</a></li>
         <li><a href="#">Project</a></li>
