@@ -6,7 +6,7 @@
     <div class="box">
 	<a href="<?php echo base_url('foundation/player/biography/'.$b['y_id']); ?>">
 	<div class="img"><img src="<?php echo base_url().'images/vol2.jpg'; ?>" alt="Image 3" width="206px" height="195px"/></div>
-	<div class="ttl">Documentry of CHOPEMA MAHA TIRTHAYATRA</div>
+	<div class="ttl"><?php echo $b['title']; ?></div>
 	</a>
     </div>
 	<?php

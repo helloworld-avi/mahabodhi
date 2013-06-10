@@ -28,7 +28,7 @@
 			<!-- start of content box -->
 			    <div class="content_box">
 				<?php
-                                        include "application/views/foundationvideo/misc/other_list.php";
+                                        include "application/views/foundationvideo/other/other_list.php";
                                     ?>
 			   </div>
 			    <!-- end of cnontent box -->

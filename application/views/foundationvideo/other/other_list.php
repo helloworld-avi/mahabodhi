@@ -1,12 +1,12 @@
-<h2>Misc</h2>
+<h2>Other</h2>
 <div style="padding-left: 15px;">
     <?php
     foreach($other as $o){
     ?>	
     <div class="box">
-	<a href="<?php echo base_url('foudation/player/other/'.$t['y_id']); ?>">
+	<a href="<?php echo base_url('foundation/player/other/'.$o['y_id']); ?>">
 	<div class="img"><img src="<?php echo base_url().'images/vol2.jpg'; ?>" alt="Image 3" width="206px" height="195px"/></div>
-	<div class="ttl">Documentry of CHOPEMA MAHA TIRTHAYATRA</div>
+	<div class="ttl"><?php echo $o['title']; ?></div>
 	</a>
     </div>
     <?php

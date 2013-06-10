@@ -207,8 +207,10 @@
 	    <?php foreach($videos['other'] as $t){
 		?>
 		<div class="box">
-		    <div class="img"><a href="<?php echo base_url('foundation/player/other/'.$t['y_id']); ?>"><img src="<?php echo base_url().'images/vol2.jpg'; ?>" alt="Image 3" width="206px" height="195px"/></div>
-		    <div class="ttl"><a href="#"><?php echo $t['title']; ?></a></div>
+		    <a href="<?php echo base_url('foundation/player/other/'.$t['y_id']); ?>">
+		    <div class="img"><img src="<?php echo base_url().'images/vol2.jpg'; ?>" alt="Image 3" width="206px" height="195px"/></div>
+		    <div class="ttl"><?php echo $t['title']; ?></div>
+		    </a>
 		</div>
 		<?php
 	    }
