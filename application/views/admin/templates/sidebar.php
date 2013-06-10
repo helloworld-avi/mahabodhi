@@ -32,7 +32,7 @@
         Users
     </div>
     <ul class="nav">
-        <li class="nav-list">Show All</li>
+        <li class="nav-list"><a href="<?php echo base_url().'admin/user/show-all'; ?>" >Show All</a></li>
         <li class="nav-list">Block User</li>
     </ul>
 </div>

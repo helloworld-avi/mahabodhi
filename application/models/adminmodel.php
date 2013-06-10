@@ -6,6 +6,31 @@
             parent::__construct();
             $this->load->database();
         }
+        function get_user(){
+            $this->db->select('id,first_name,middle_name,last_name,username,email,blocked');
+            $this->db->from('user_info');
+            $query = $this->db->get();
+            
+            return $query->result_array();
+        }
+        
+        function delete_user(){
+            $this->db->where('id',$this->uri->segment(3));
+            $this->db->delete('user_info');
+        }
+        
+        function block_user(){
+                $this->db->where('id',$this->uri->segment(3));
+                $this->db->set('blocked',1);
+                $this->db->update('user_info');
+                
+        }
+        function unblock_user(){
+                $this->db->where('id',$this->uri->segment(3));
+                $this->db->set('blocked',0);
+                $this->db->update('user_info');
+                
+        }
         
         public function setVideo($arg){
             return $this->db->insert('featured_video', $arg);
