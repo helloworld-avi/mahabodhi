@@ -64,6 +64,21 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
+$db['admin']['hostname'] = 'localhost';
+$db['admin']['username'] = 'localadmin';
+$db['admin']['password'] = 'afterward';
+$db['admin']['database'] = 'db_mahabodhi';
+$db['admin']['dbdriver'] = 'mysql';
+$db['admin']['dbprefix'] = '';
+$db['admin']['pconnect'] = TRUE;
+$db['admin']['db_debug'] = TRUE;
+$db['admin']['cache_on'] = FALSE;
+$db['admin']['cachedir'] = '';
+$db['admin']['char_set'] = 'utf8';
+$db['admin']['dbcollat'] = 'utf8_general_ci';
+$db['admin']['swap_pre'] = '';
+$db['admin']['autoinit'] = TRUE;
+$db['admin']['stricton'] = FALSE;
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
