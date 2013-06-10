@@ -26,7 +26,9 @@
 			<div id="content">
 			<!-- start of content box -->
 			<div class="content_box">
-			    hello
+			    <?php
+                                include "application/views/aboutus/about.php"; 
+                            ?>
 		       </div>
 			<!-- end of cnontent box -->
 		</div>
