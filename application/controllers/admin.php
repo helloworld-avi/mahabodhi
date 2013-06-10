@@ -7,13 +7,23 @@
         }
         
         public function index($args=null){
-            $this->load->view('admin/home/home');
+            
+            $new_data = array('admin_name' => 'helloadmin',
+                              'is_admin' => TRUE
+                              );
+            
+            $this->session->set_userdata($new_data);
+            $data['session'] = $this->session->all_userdata();
+            $this->load->view('admin/index', $data);
         }
         
         public function login(){
+            //change database user
+            $active_group = "admin";
+            
+            $this->load->view('admin/home/home');
             //$id = $this->security->xss_clean(strtolower(trim($this->input->post('admin_id'))));
             //$pwd = $this->security->xss_clean(strtolower(trim($this->input->post('admin_pwd'))));
-            $this->load->view('admin/login');
         }
         
         public function video(){
