@@ -1,15 +1,16 @@
-<h2>Pilgrimage</h2>
+<h2>See More</h2>
 <div style="padding-left: 15px;">
     <?php
-    foreach($pilgrimage as $p)
-    ?>
+    foreach($video as $v){
+	?>
     <div class="box">
-	<a href="<?php echo base_url('foundation/player/pilgrimage/'.$p['y_id']); ?>">
+	<a href="<?php echo base_url('foundation/player/'.$v['category'].'/'.$v['y_id']); ?>">
 	<div class="img"><img src="<?php echo base_url().'images/vol2.jpg'; ?>" alt="Image 3" width="206px" height="195px"/></div>
-	<div class="ttl">Documentry of CHOPEMA MAHA TIRTHAYATRA</div>
+	<div class="ttl"><?php echo $v['title'];?></div>
 	</a>
     </div>
     <?php
+    }
     ?>
     
     <!--
@@ -54,6 +55,4 @@
 	<div class="ttl"><a href="#">Prabachan</a></div>
     </div>
     -->
-    
-    
 </div>

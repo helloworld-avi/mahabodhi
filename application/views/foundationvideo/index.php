@@ -46,7 +46,6 @@
 		
 		<!-- start of footer -->
                 <div class="cleaner">
-				
 			</div> 
 		<div id="footer">
 		    <?php
