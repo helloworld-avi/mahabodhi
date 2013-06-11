@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-<title>Foundation Video</title>
+<title>General Teaching Video</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="<?php echo base_url().'style/style-other.css'; ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url().'style/style.css'; ?>" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<!-- start of wrapper -->
@@ -26,7 +26,7 @@
                         <!-- start of content -->
 			<div id="content">
 			<!-- start of content box -->
-			    <div class="content_box">
+			    <div class="content_box1">
 				<?php
                                         include "application/views/foundationvideo/teaching/teaching_list.php";
                                     ?>

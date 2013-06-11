@@ -25,10 +25,17 @@
 			<!-- start of content -->
 			<div id="content">
 			<!-- start of content box -->
-			<div class="content_box">
-			    <?php
-                                include "application/views/aboutus/about.php"; 
-                            ?>
+			<div class="content_box1">
+                            <div id="foundation_lft">
+                                <?php
+                                    include "application/views/aboutus/about_lft.php"; 
+                                ?>
+                            </div>
+                            <div id="foundation_rit">
+                                    <?php
+                                        include "application/views/aboutus/about_rit.php";
+                                    ?>
+                                </div>
 		       </div>
 			<!-- end of cnontent box -->
 		</div>

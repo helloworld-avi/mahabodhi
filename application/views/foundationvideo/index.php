@@ -4,7 +4,7 @@
 <title>Foundation Video</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="<?php echo base_url().'style/style-other.css'; ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url().'style/style.css'; ?>" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<!-- start of wrapper -->
@@ -23,7 +23,7 @@
                         <!-- start of content -->
 			<div id="content">
                             <!-- start of content box -->
-                            <div class="content_box">
+                            <div class="content_box1">
                                 <div id="foundation_lft">
                                     <?php
                                         include "application/views/foundationvideo/foundation_lft.php";

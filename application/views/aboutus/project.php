@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-<title>Foundation Teaching Video</title>
+<title>MAHABODHI DOCUMENTRY AND FILM PRODUCTION FOUNDATION</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="<?php echo base_url().'style/style.css'; ?>" rel="stylesheet" type="text/css" />
@@ -21,24 +21,27 @@
 		</div>
 		<!-- end of header -->
 	    
-		<div id="main">
-			
-                        <!-- start of content -->
+		<div id="main">		    
+			<!-- start of content -->
 			<div id="content">
 			<!-- start of content box -->
-			    <div class="content_box1">
-				<?php
-                                        include "application/views/foundationvideo/teaching/teaching_list.php";
+			<div class="content_box1">
+                            <div id="foundation_lft">
+                                <?php
+                                    include "application/views/aboutus/about_lft.php"; 
+                                ?>
+                            </div>
+                            <div id="foundation_rit">
+                                    <?php
+                                        include "application/views/aboutus/project_main.php";
                                     ?>
-			   </div>
-			    <!-- end of cnontent box -->
-			</div>
+                                </div>
+		       </div>
+			<!-- end of cnontent box -->
 		</div>
 		<!-- end of main -->
 		
-		<!-- start of footer -->
-                <div class="cleaner">
-			</div> 
+		<!-- start of footer -->    
 		<div id="footer">
 		    <?php
 			include "application/views/templates/footer.php";

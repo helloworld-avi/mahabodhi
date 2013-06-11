@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-<title>MAHABODHI DOCUMENTRY AND FILM PRODUCTION FOUNDATION</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="style/style.css" rel="stylesheet" type="text/css" />
+<title>MAHABODHI DOCUMENTRY AND FILM PRODUCTION FOUNDATION </title>
+<meta name="keywords" content="contact us,address, mahabodhi" />
+<meta name="description" content=" contact us,  address of mahabodhi documentry, mahabodhi documentry and film production foundation" />
+<link href="<?php echo base_url().'style/style.css'; ?>" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<!-- start of wrapper -->
@@ -27,7 +27,7 @@
 			<!-- start of content box -->
 			<div class="content_box">
 			    <?php
-                                include "application/views/aboutus/about.php"; 
+                                include "application/views/contactus/contact.php"; 
                             ?>
 		       </div>
 			<!-- end of cnontent box -->

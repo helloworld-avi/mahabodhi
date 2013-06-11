@@ -8,4 +8,7 @@
         public function index(){
             $this->load->view('aboutus/index');
         }
+        public function project(){
+            $this->load->view('aboutus/project');
+        }
     }

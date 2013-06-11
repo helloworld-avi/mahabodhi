@@ -9,6 +9,7 @@ body {
 	background-color: #000000;
 	background-position: top;
 	background-repeat: no-repeat;
+	scrollbar-face-color: #b46868;/*style for scroller for ie*/
 }
 
 a, a:link, a:visited { color: #CC9933; font-weight: bold; text-decoration: none; }
@@ -18,8 +19,8 @@ p { margin: 0 0 10px 0; padding: 0; }
 img { border: none; }
 
 h1, h2, h3, h4, h5, h6 { color: #fff; font-weight: normal; }
-h1 { font-size: 28px; margin: 0 0 30px 0; padding: 5px 0 }
-h2 { font-size: 25px; margin: 0 0 20px 0; padding: 5px 0; line-height: 30px; }
+h1 { font-size: 28px; color:#000; margin: 0 0 30px 0; padding: 5px 0 }
+h2 { font-size: 25px; margin: 0 0 20px 0; padding: 5px 0px 0px 20px; line-height: 30px; color: red; }
 h3 { font-size: 22px; margin: 0 0 15px; padding: 0; }
 a.h3{color: #CC9933;}
 h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
@@ -34,7 +35,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 .h50 { height: 50px }
 .h60 { height: 60px }
 
-a.button { display: block; width: 114px; height: 30px; text-align: center; padding-top: 6px; color: #CC9933; font-weight: bold; background: url(../images/templatemo_button.png) }
+a.button { display: block; width: 114px; height: 30px; text-align: center; padding-top: 6px; color: #CC9933; font-weight: bold; background: url(../images/xyz.png) }
 a.button:hover { text-decoration: none; color: #FFFFFF; }
 
 .float_l { float: left }
@@ -118,10 +119,16 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 }
 
 .title { display: inline-block; padding: 20px 60px 20px 0; margin-bottom: 10px; font-size: 24px; color: #CC9933; }
+/**only for front page*/
 .content_box {
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 	border-bottom: 1px solid #1e1e1e;	
+}
+.content_box1 {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	min-height: 500px;
 }
 /*style for content2 all boxes*/
 .col_w280 {
@@ -176,4 +183,258 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 #footer a {
 	font-weight: normal;
 	color: #fff;
+}
+/*====== style for foundation video page ============== */
+#foundation_lft{
+	float: left;
+	height: auto;
+	width: 130px;
+}
+	#foundation_lft_bdy{
+		text-decoration: none;
+	}
+	
+	#foundation_lft_bdy ul{
+		list-style: none;
+	}
+	#foundation_lft_bdy li a{
+	    color: #fff;
+	}
+	
+	#foundation_lft_bdy li a:hover{
+		list-style: none;
+		color: #fff;
+		opacity: 0.7;
+	}
+#foundation_rit{
+	float: left;
+	height: auto;
+	width: 774px;
+	padding-left: 60px;
+}
+	#foundation_rit_bdy{
+		text-decoration: none;
+		height: auto;
+		margin-bottom: 10px;
+	}
+	.scroll { 
+	    width:770px;
+	    height: 400px;
+	    overflow: scroll;/*showing scroller*/
+	    overflow-x: hidden;
+	}
+	::-webkit-scrollbar {
+		width: 15px;
+	  } /* this targets the default scrollbar (compulsory) */
+	::-webkit-scrollbar-track {
+		background-color: #b46868;
+	  } /* the new scrollbar will have a flat appearance with the set background color */
+	::-webkit-scrollbar-thumb {
+		background-color: rgba(0, 0, 0, 0.2);
+	  } /* this will style the thumb, ignoring the track */
+	::-webkit-scrollbar-button {
+		background-color: #7c2929;
+	  } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+	::-webkit-scrollbar-corner {
+		background-color: black;
+	  } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+	
+	.scrollContainer div.panel{
+		float: left;
+	    width: 700px;
+	    height: 410px;
+	    padding: 0px;
+	    text-align: left;
+	    padding-left: 25px;
+	}
+	.cleaner_h40 {
+	    clear: both;
+	    width:100%;
+	    height: 40px;
+	    }
+	
+	.box{
+		background-color: rgb(238, 238, 238);
+		float: left;
+		padding: 10 px;
+		width: 212px;
+		height: 240px;
+		margin: 10px;
+		border-radius: 5px 5px 5px 5px;
+		opacity: 0.8;
+		
+	}
+	.box1{
+		background-color: red;
+		float: left;
+		padding: 10 px;
+		width: 100px;
+		margin: 10px;
+		border-radius: 5px 5px 5px 5px;
+		position: relative;
+		text-align: center;		
+	}
+	.box1 :hover{
+		text-decoration: none;
+	}
+	#see{
+		float: left;
+		width: 100px;
+		height: 30px;
+		background: url(../images/xyz.png);
+		text-align: center;
+		margin-left: 0px;
+		clear: both;
+	}
+	.img{
+		border: 1px solid rgb(222, 222, 222);
+		height: 195px;
+		width: 204px;
+		margin-bottom: 5px;
+		padding: 1px;
+	}
+	.img :hover{
+		opacity: 1;
+	}
+	.ttl{
+		float: left;
+		height: 40px;
+		font-size: 12px;
+		line-height: 15px;
+		margin-bottom: 4px;
+		padding-left: 3px;
+	}
+	.ttl a:hover{
+		text-decoration: none;
+		
+	}
+	
+#player{
+	margin-left: 150px;
+	height: 400px;
+	width: 650px;
+	padding: 5px;
+	background: #ccc;
+	margin-bottom: 20px;
+}
+/*================ style for donation page =================*/
+#donation{
+	margin-left: 10px;
+	height: 400px;
+	width: 935px;
+	padding: 5px;
+	margin-bottom: 20px;
+	opacity: 0.8;
+}
+#donation1{
+	margin: 45px auto auto 15px;
+	height: 240px;
+	width: 305px;
+	padding: 30px;
+	background: #ccc;
+	opacity: 0.6;
+}
+
+.donn{
+	float: left;
+	background: #CC9933;
+	border: 0px;
+	font-size: 20px;
+	width: 80px;
+	padding-left: 40px;
+}
+#don_1{
+	float: left;
+	padding-top: 6px;
+	padding-right: 10px;
+	font-size: 25px;
+	height: 30px;
+	width: 200px;
+	margin: 30px 0px 40px 40px;
+	background: #CC9933;
+}
+#don_2{
+	float: left;
+	padding: 5px;
+	margin: 5px;
+	margin-left: 30px;
+	width: 115px;
+	height: 50px;
+}
+#don_3{
+	float: right;
+	padding: 5px;
+	margin: 5px;
+}
+
+/*============= uzer login style  ==*/
+#regstrn{
+	margin: 45px auto auto 10px;
+	height: 230px;
+	width: 462px;
+	padding: 30px;
+	background: #ccc;
+	opacity: 0.6;
+}
+#uzer{
+	float: left;
+	margin-left: 20px;
+}
+#uzer_1{
+	float: left;
+	padding-top: 6px;
+	padding-right: 10px;
+	font-size: 25px;
+	height: 30px;
+	width: 200px;
+	margin: 10px auto 10px 40px;
+	background: #FFFFFF;
+}
+#uzer1{
+	float: left;
+	background: #FFFFFF;
+	color: #000;
+	border: 0px;
+	font-size: 20px;
+	width: 150px;
+	margin: 1px;
+}
+#uzer2{
+	float: left;
+	background: #FFFFFF;
+	color: #000;
+	border: 0px;
+	font-size: 20px;
+	width: 250px;
+	margin: 1px;
+}
+.uzer1{
+	float: left;
+	background: #FFFFFF;
+	color: #000;
+	border: 0px;
+	font-size: 20px;
+	width: 200px;
+}
+#login-button{
+	float: left;
+	display: block;
+	width: 114px;
+	height: 40px;
+	text-align: center;
+	padding-top: 0px;
+	color: #CC9933;
+	font-weight: bold;
+	background: url(../images/xyz.png);
+}
+/*=========== contact us ===============*/
+#contact{
+	margin: 45px auto auto 15px;
+	height: 240px;
+	width: 405px;
+	padding: 30px;
+	background: #ccc;
+	color: #CC9933;
+	font-size: 15px;
+	opacity: 0.7;
 }

@@ -1,9 +1,17 @@
-<div id="donation1">
-    <div ><h1 align="center">Login</h1></div>
+<div id="regstrn">
+    <div ><h2 align="Left">Become Member</h2></div>
     <form action="#" name="login">
-        <div id="uzer_1"><input type="text" class="uzer1" placeholder="username" required="TRUE" ></div>
-        <div id="uzer_1"><input type="text" class="uzer1" placeholder="password" required="TRUE"></div>
-        <div id="don_2"><a class="button float_r getstart" href="#">Sign In</a></div>
-        <div id="don_3"><a class="button float_r" href="#"> Register</a></div>
+        <div>
+            <input type="text" id="uzer1" placeholder="First Name" required="TRUE" >
+            <input type="text" id="uzer1" placeholder="Middle Name" >
+            <input type="text" id="uzer1" placeholder="Last Name" required="TRUE" ><br/><br/>
+            <input type="email" id="uzer2" placeholder = "email" required = "TRUE"><br/><br/>
+            <input type="text" id="uzer2" placeholder = "contact number" required = "TRUE" maxlength="10"><br/>
+        </div>
+        <br/>
+        <div id="don_2"><input type="submit" id="login-button" value="Register"></div>
     </form>
+    <br/>
+    <div class="cleaner"><h4>Bring your identification card to validate!</h4></div>
+    
 </div>

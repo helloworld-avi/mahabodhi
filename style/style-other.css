@@ -8,6 +8,8 @@ body {
 	background-color: #000000;
 	background-position: top;
 	background-repeat: no-repeat;
+	background-image: url(../images/buddha.jpg);
+	scrollbar-face-color: #b46868;/*style for scroller for ie*/
 }
 
 a, a:link, a:visited { color: #CC9933; font-weight: bold; text-decoration: none; }
@@ -33,7 +35,7 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 .h50 { height: 50px }
 .h60 { height: 60px }
 
-a.button { display: block; width: 114px; height: 30px; text-align: center; padding-top: 6px; color: #CC9933; font-weight: bold; background: url(../images/templatemo_button.png) }
+a.button { display: block; width: 114px; height: 30px; text-align: center; padding-top: 6px; color: #CC9933; font-weight: bold; background: url(../images/xyz.png) }
 a.button:hover { text-decoration: none; color: #FFFFFF; }
 
 .float_l { float: left }
@@ -46,14 +48,13 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 .image_wrapper_02 { position: relative; width: 280px; height: 120px; margin-bottom: 10px }
 .image_wrapper_02 span { position: absolute; width: 280px; height: 120px; background: url(../images/image_frame.png) }
 
-
-#wrapper { width: 964px; margin: 0 auto; background: url(../images/img.jpg) repeat;}
+#wrapper { width: 964px; margin: 0 auto; //background: url(../images/img.jpg) repeat;
+}
 
 #header {
 	width: 964px;
 	height: 233px;
 	margin: 0 auto;
-	background: url(../images/background.png) repeat;
 }
 
 #site_title a {
@@ -172,10 +173,27 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	.scroll { 
 	    width:770px;
 	    height: 400px;
-	    overflow: scroll;
+	    overflow: scroll;/*showing scroller*/
 	    overflow-x: hidden;
 	}
+	::-webkit-scrollbar {
+		width: 15px;
+	  } /* this targets the default scrollbar (compulsory) */
+	::-webkit-scrollbar-track {
+		background-color: #b46868;
+	  } /* the new scrollbar will have a flat appearance with the set background color */
+	::-webkit-scrollbar-thumb {
+		background-color: rgba(0, 0, 0, 0.2);
+	  } /* this will style the thumb, ignoring the track */
+	::-webkit-scrollbar-button {
+		background-color: #7c2929;
+	  } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+	::-webkit-scrollbar-corner {
+		background-color: black;
+	  } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+	
 	.scrollContainer div.panel{
+		float: left;
 	    width: 700px;
 	    height: 410px;
 	    padding: 0px;
@@ -196,6 +214,7 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 		height: 240px;
 		margin: 10px;
 		border-radius: 5px 5px 5px 5px;
+		opacity: 0.8;
 		
 	}
 	.box1{
@@ -210,6 +229,15 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	}
 	.box1 :hover{
 		text-decoration: none;
+	}
+	#see{
+		float: left;
+		width: 100px;
+		height: 30px;
+		background: url(../images/xyz.png);
+		text-align: center;
+		margin-left: 0px;
+		clear: both;
 	}
 	.img{
 		border: 1px solid rgb(222, 222, 222);
@@ -249,8 +277,9 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	height: 400px;
 	width: 935px;
 	padding: 5px;
-	background: url(../images/donate.png) no-repeat;
+	//background: url(../images/donate.png) no-repeat;
 	margin-bottom: 20px;
+	opacity: 0.8;
 }
 #donation1{
 	margin: 45px auto auto 15px;
@@ -258,8 +287,9 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	width: 305px;
 	padding: 30px;
 	background: #ccc;
-	opacity: 0.3;
+	opacity: 0.6;
 }
+
 .donn{
 	float: left;
 	background: #CC9933;
@@ -282,6 +312,9 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	float: left;
 	padding: 5px;
 	margin: 5px;
+	margin-left: 30px;
+	width: 115px;
+	height: 50px;
 }
 #don_3{
 	float: right;
@@ -290,9 +323,17 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 }
 
 /*============= uzer login style  ==*/
+#regstrn{
+	margin: 45px auto auto 10px;
+	height: 230px;
+	width: 462px;
+	padding: 30px;
+	background: #ccc;
+	opacity: 0.6;
+}
 #uzer{
 	float: left;
-	margin-left: 280px;
+	margin-left: 20px;
 }
 #uzer_1{
 	float: left;
@@ -304,6 +345,24 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	margin: 10px auto 10px 40px;
 	background: #FFFFFF;
 }
+#uzer1{
+	float: left;
+	background: #FFFFFF;
+	color: #000;
+	border: 0px;
+	font-size: 20px;
+	width: 150px;
+	margin: 1px;
+}
+#uzer2{
+	float: left;
+	background: #FFFFFF;
+	color: #000;
+	border: 0px;
+	font-size: 20px;
+	width: 250px;
+	margin: 1px;
+}
 .uzer1{
 	float: left;
 	background: #FFFFFF;
@@ -311,4 +370,24 @@ a.button:hover { text-decoration: none; color: #FFFFFF; }
 	border: 0px;
 	font-size: 20px;
 	width: 200px;
+}
+#login-button{
+	float: left;
+	display: block;
+	width: 114px;
+	height: 40px;
+	text-align: center;
+	padding-top: 0px;
+	color: #CC9933;
+	font-weight: bold;
+	background: url(../images/xyz.png);
+}
+/*=========== contact us ===============*/
+#contact{
+	margin: 45px auto auto 15px;
+	height: 240px;
+	width: 305px;
+	padding: 30px;
+	background: #ccc;
+	opacity: 0.7;
 }

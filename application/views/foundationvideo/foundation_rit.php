@@ -30,7 +30,7 @@
 	    -->
 	    
 	    
-		<div class="box1"><a href="<?php echo base_url().'foundation/teaching/'; ?>">See More</a></div>		
+		<div id = "see" ><a href="<?php echo base_url().'foundation/teaching/'; ?>">See More</a></div>		
 	    </div>
             <!-- end of home -->
             <div class="panel" id="meditation">
@@ -58,7 +58,7 @@
 		    <div class="ttl"><a href="#">Prabachan</a></div>
 		</div>
 	    -->
-		<div class="box1"><a href="<?php echo base_url().'foundation/meditation/'; ?>">See More</a></div>
+		<div id = "see"><a href="<?php echo base_url().'foundation/meditation/'; ?>">See More</a></div>
 	    </div>
 	    <div class="panel" id="pilgrimage">
 	    <h2>Pilgrimage</h2>
@@ -88,7 +88,7 @@
 		</div>
 	    -->
 		
-		<div class="box1"><a href="<?php echo base_url().'foundation/pilgrimage/'; ?>">See More</a></div>
+		<div id = "see"><a href="<?php echo base_url().'foundation/pilgrimage/'; ?>">See More</a></div>
 	    </div>
 	    <div class="panel" id="workshop">
 	    <h2>Workshop</h2>
@@ -116,14 +116,14 @@
 		    <div class="ttl"><a href="#">Prabachan</a></div>
 		</div>
 	    -->
-		<div class="box1"><a href="<?php echo base_url().'foundation/workshop/'; ?>">See More</a></div>
+		<div id = "see"><a href="<?php echo base_url().'foundation/workshop/'; ?>">See More</a></div>
 	    </div>
-	    <div class="panel" id="eventts">
+	    <div class="panel" id="event">
 	    <h2>Events</h2>
 	    <?php foreach($videos['event'] as $t){
 		?>
 		<div class="box">
-		    <div class="img"><a href="<?php echo base_url('foundation/player/event'.$t['y_id']); ?>"><img src="<?php echo base_url().'images/vol2.jpg'; ?>" alt="Image 3" width="206px" height="195px"/></div>
+		    <div class="img"><a href="<?php echo base_url('foundation/player/events/'.$t['y_id']); ?>"><img src="<?php echo base_url().'images/vol2.jpg'; ?>" alt="Image 3" width="206px" height="195px"/></div>
 		    <div class="ttl"><a href="#"><?php echo $t['title']; ?></a></div>
 		</div>
 		<?php
@@ -144,7 +144,7 @@
 		    <div class="ttl"><a href="#">Prabachan</a></div>
 		</div>
 	    -->
-		<div class="box1"><a href="<?php echo base_url().'foundation/event/'; ?>">See More</a></div>
+		<div id = "see"><a href="<?php echo base_url().'foundation/event/'; ?>">See More</a></div>
 	    </div>
 	    <div class="panel" id="biography">
 	    <h2>Biography</h2>
@@ -172,7 +172,7 @@
 		    <div class="ttl"><a href="#">Prabachan</a></div>
 		</div>
 	    -->
-		<div class="box1"><a href="<?php echo base_url().'foundation/biography/'; ?>"">See More</a></div>
+		<div id = "see"><a href="<?php echo base_url().'foundation/biography/'; ?>"">See More</a></div>
 	    </div>
 	    <div class="panel" id="documentry">
 	    <h2>Documentry</h2>
@@ -200,7 +200,7 @@
 		    <div class="ttl"><a href="#">Prabachan</a></div>
 		</div>
 	    -->
-		<div class="box1"><a href="<?php echo base_url().'foundation/documentry/'; ?>">See More</a></div>
+		<div id = "see"><a href="<?php echo base_url().'foundation/documentry/'; ?>">See More</a></div>
 	    </div>
 	    <div class="panel" id="other" >
 	    <h2>Other</h2>
@@ -230,7 +230,7 @@
 		    <div class="ttl"><a href="#">Prabachan</a></div>
 		</div>
 	    -->
-		<div class="box1"><a href="<?php echo base_url().'foundation/other/'; ?>">See More</a></div>
+		<div id = "see"><a href="<?php echo base_url().'foundation/other/'; ?>">See More</a></div>
 	    </div>
         </div>
     </div>
