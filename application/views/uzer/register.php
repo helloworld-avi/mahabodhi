@@ -13,5 +13,8 @@
     </form>
     <br/>
     <div class="cleaner"><h4>Bring your identification card to validate!</h4></div>
+    <div id="regstrn1">
+        <h1>Types of Membership</h1>
+    </div>
     
 </div>

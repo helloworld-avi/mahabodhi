@@ -27,7 +27,7 @@
 			<div id="content">
                             <!-- start of content box -->
                             <div class="content_box1">
-                                <div id="player">ds</div>
+                                <div id="player"></div>
 				<?php
                                         include "application/views/foundationvideo/player/player_list.php";
                                 ?>

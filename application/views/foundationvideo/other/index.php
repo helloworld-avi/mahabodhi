@@ -4,7 +4,7 @@
 <title>Foundation Other Video</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="<?php echo base_url().'style/stylecontent_box.css'; ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url().'style/style.css'; ?>" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<!-- start of wrapper -->
